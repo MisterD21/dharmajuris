@@ -44,32 +44,8 @@ const NavigationBar = () => {
                         </div>
                     </div>
                 </div>
-<<<<<<< Updated upstream
-                <nav className="navbar navbar-expand-lg bg-white navbar-light p-0">
-                    <a href="index.html" className="navbar-brand d-block d-lg-none">
-                        <h1 className="m-0 display-4 text-primary text-uppercase">Justice</h1>
-                    </a>
-                    <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div className="navbar-nav mr-auto py-0">
-                            <Link to="/Home" className="nav-item nav-link">Home</Link>
-                            <Link to="/About" className="nav-item nav-link">About Us</Link>
-                            <Link to="/PracticeArea" className="nav-item nav-link">Team</Link>
-                            <Link to="/Contact" className="nav-item nav-link">Practice Area</Link>
-                            <Link to="/Contact" className="nav-item nav-link">Resoures</Link>
-                            <Link to="/Contact" className="nav-item nav-link">Our Clients</Link>
-                            <Link to="/Contact" className="nav-item nav-link">Careers</Link>
-                            <Link to="/Contact" className="nav-item nav-link">Contact Us</Link>
-
-                           
-                        </div>
-                    </div>
-                </nav>
-=======
+               
                 <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
-                    <Navbar.Brand href="/">Justice</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
@@ -94,11 +70,13 @@ const NavigationBar = () => {
                             </div>
                             </div>
                         </NavDropdown>
-                        <Nav.Link as={Link} to="/Contact">Contact Us</Nav.Link>
+                        <Nav.Link as={Link} to="/Contact" className="nav-item nav-link">Resoures</Nav.Link>
+                        <Nav.Link as={Link} to="/Contact" className="nav-item nav-link">Our Clients</Nav.Link>
+                        <Nav.Link as={Link} to="/Contact" className="nav-item nav-link">Careers</Nav.Link>
+                        <Nav.Link as={Link} to="/Contact" className="nav-item nav-link">Contact Us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
->>>>>>> Stashed changes
             </div>
         </div>
     </div>
