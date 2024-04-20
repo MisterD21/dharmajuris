@@ -38,7 +38,7 @@ const NavigationBar = () => {
                             <a className="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
                                 <i className="fab fa-instagram"></i>
                             </a>
-                            <a className="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                            <a className="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="https://youtube.com/@terminalgeeks">
                                 <i className="fab fa-youtube"></i>
                             </a>
                         </div>
@@ -55,8 +55,13 @@ const NavigationBar = () => {
                         <div className="navbar-nav mr-auto py-0">
                             <Link to="/Home" className="nav-item nav-link">Home</Link>
                             <Link to="/About" className="nav-item nav-link">About Us</Link>
-                            <Link to="/PracticeArea" className="nav-item nav-link">Practice Area</Link>
+                            <Link to="/PracticeArea" className="nav-item nav-link">Team</Link>
+                            <Link to="/Contact" className="nav-item nav-link">Practice Area</Link>
+                            <Link to="/Contact" className="nav-item nav-link">Resoures</Link>
+                            <Link to="/Contact" className="nav-item nav-link">Our Clients</Link>
+                            <Link to="/Contact" className="nav-item nav-link">Careers</Link>
                             <Link to="/Contact" className="nav-item nav-link">Contact Us</Link>
+
                            
                         </div>
                     </div>
