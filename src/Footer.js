@@ -1,4 +1,6 @@
 import React from 'react';
+import { Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -62,7 +64,7 @@ const Footer = () => {
                     <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>FAQs</a>
                     <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>Help</a>
                     <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>Terms</a>
-                    <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>Privacy</a>
+                    <Link className="text-white mb-2" to="/Privacy"><i className="fa fa-angle-right mr-2"></i>Privacy</Link>
                     <a className="text-white" href="#"><i className="fa fa-angle-right mr-2"></i>Site Map</a>
                 </div>
             </div>
@@ -84,7 +86,7 @@ const Footer = () => {
                 <p className="m-0 text-white">&copy; <a className="font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved.</p>
             </div>
             <div className="col-md-6 text-center text-md-right">
-                <p className="m-0 text-white">Designed by <a className="font-weight-bold" href="https://htmlcodex.com">HTML Codex</a></p>
+            <p className="m-0 text-white">Designed by <a className="font-weight-bold" href="http://terminalgeeks.com" target="_blank" rel="noopener noreferrer">TerminalGeeks</a></p>
             </div>
         </div>
     </div>

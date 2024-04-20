@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import PracticeAreaMain from './components/PracticeArea/PracticeAreaMain';
+import Privacy from './Privacy';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/PracticeArea" element={<PracticeAreaMain />} />
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
       <Footer />
     </Router>

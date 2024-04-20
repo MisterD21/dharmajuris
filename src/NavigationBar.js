@@ -21,7 +21,7 @@ const NavigationBar = () => {
                         </div>
                         <div className="h-100 d-inline-flex align-items-center py-2 px-2">
                             <i className="fa fa-phone-alt text-primary mr-2"></i>
-                            <small>+987688990</small>
+                            <small>+012 345 6789</small>
                         </div>
                     </div>
                     <div className="col-lg-5 text-right">
@@ -44,6 +44,7 @@ const NavigationBar = () => {
                         </div>
                     </div>
                 </div>
+<<<<<<< Updated upstream
                 <nav className="navbar navbar-expand-lg bg-white navbar-light p-0">
                     <a href="index.html" className="navbar-brand d-block d-lg-none">
                         <h1 className="m-0 display-4 text-primary text-uppercase">Justice</h1>
@@ -66,6 +67,38 @@ const NavigationBar = () => {
                         </div>
                     </div>
                 </nav>
+=======
+                <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
+                    <Navbar.Brand href="/">Justice</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="mr-auto">
+                        <Nav.Link as={Link} to="/Home">Home</Nav.Link>
+                        <Nav.Link as={Link} to="/About">About Us</Nav.Link>
+                        <NavDropdown title="Practice Area" id="practice-area-dropdown">
+                            <div style={{ display: 'flex' }}>
+                            <div style={{ flex: 1 }}>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page1">Page 1</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page2">Page 2</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page3">Page 3</NavDropdown.Item>
+                            </div>
+                            <div style={{ flex: 1 }}>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page4">Page 4</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page5">Page 5</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page6">Page 6</NavDropdown.Item>
+                            </div>
+                            <div style={{ flex: 1 }}>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page7">Page 7</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page8">Page 8</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page9">Page 9</NavDropdown.Item>
+                            </div>
+                            </div>
+                        </NavDropdown>
+                        <Nav.Link as={Link} to="/Contact">Contact Us</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+>>>>>>> Stashed changes
             </div>
         </div>
     </div>
