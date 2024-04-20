@@ -12,7 +12,7 @@ const Footer = () => {
                     <i className="fa fa-2x fa-map-marker-alt text-primary"></i>
                     <div className="ml-3">
                         <h5 className="text-white">Our Office</h5>
-                        <p className="m-0">123 Street, New York, USA</p>
+                        <p className="m-0">Pragati Nagar, Near St. Thomas School, Shabad Pratap Aashram, Gwalior (M.P)- 474012</p>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@ const Footer = () => {
                     <i className="fa fa-2x fa-envelope-open text-primary"></i>
                     <div className="ml-3">
                         <h5 className="text-white">Email Us</h5>
-                        <p className="m-0">info@example.com</p>
+                        <p className="m-0">advyashj@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@ const Footer = () => {
                     <i className="fa fa-2x fa-phone-alt text-primary"></i>
                     <div className="ml-3">
                         <h5 className="text-white">Call Us</h5>
-                        <p className="m-0">+012 345 6789</p>
+                        <p className="m-0">+91-9806204529</p>
                     </div>
                 </div>
             </div>
@@ -38,8 +38,7 @@ const Footer = () => {
         <div className="row pt-5">
             <div className="col-lg-3 col-md-6 mb-5">
                 <a href="index.html" className="navbar-brand">
-                    <h1 className="m-0 mt-n2 display-4 text-primary text-uppercase">Justice</h1>
-                </a>
+                <h1 className="m-0 mt-n2 display-9 text-primary text-uppercase" style={{ fontSize: '35px' }}>YJ & Associates</h1>                </a>
                 <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
                 <div className="d-flex justify-content-start mt-4">
                     <a className="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i className="fab fa-twitter"></i></a>

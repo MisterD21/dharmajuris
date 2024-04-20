@@ -9,7 +9,7 @@ const NavigationBar = () => {
         <div className="row">
             <div className="col-lg-3 bg-secondary d-none d-lg-block">
                 <a href="index.html" className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <h1 className="m-0 display-4 text-primary text-uppercase">Justice</h1>
+                    <h1 className="m-0 display-9 text-primary text-uppercase">YJ & Associates</h1>
                 </a>
             </div>
             <div className="col-lg-9">
@@ -17,11 +17,11 @@ const NavigationBar = () => {
                     <div className="col-lg-7 text-left">
                         <div className="h-100 d-inline-flex align-items-center py-2 px-3">
                             <i className="fa fa-envelope text-primary mr-2"></i>
-                            <small>yashjain@example.com</small>
+                            <small>advashj@gmail.com</small>
                         </div>
                         <div className="h-100 d-inline-flex align-items-center py-2 px-2">
                             <i className="fa fa-phone-alt text-primary mr-2"></i>
-                            <small>+012 345 6789</small>
+                            <small>+91-9806204529</small>
                         </div>
                     </div>
                     <div className="col-lg-5 text-right">

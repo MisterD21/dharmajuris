@@ -22,7 +22,7 @@ function HeaderCarousels() {
                     <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div className="p-3" style={{ maxWidth: '900px' }}>
                             <h4 className="text-white text-uppercase mb-4" style={{ letterSpacing: '3px' }}>Results You Deserve</h4>
-                            <h3 className="display-2 text-capitalize text-white mb-4">We prepared to oppose for yokjghjhu</h3>
+                            <h3 className="display-2 text-capitalize text-white mb-4">Comprehensive Legal Solutions for Every Challenge</h3>
                             <a className="btn btn-primary py-3 px-5 mt-2" href="#">Call Us Now</a>
                         </div>
                     </div>

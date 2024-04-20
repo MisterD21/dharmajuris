@@ -51,7 +51,7 @@ const PracticeArea = () => {
           <div className="col-lg-3">
             <h6 className="text-uppercase">Our Practice</h6>
             <h1 className="mb-4">Our Practice Areas</h1>
-            <p>Invidunt lorem justo clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum</p>
+            <p>Explore our diverse Practice Areas, offering comprehensive legal solutions tailored to your needs. From swift dispute resolutions to expert guidance in complex matters, our dedicated teams ensure confident navigation of legal challenges.</p>
             <a href="" className="btn btn-primary mt-2">More Services</a>
           </div>
           <div className="col-lg-9 pt-5 pt-lg-0">
@@ -64,28 +64,126 @@ const PracticeArea = () => {
                   <i className="fa fa-2x fa-landmark"></i>
                 </div>
                 <h5 className="mb-4 px-4">Civil Law</h5>
-                <p className="m-0">Takim stet justo elitr sea eirmod vero ipsum. Sed Stet clita sit duo dolor stet at at. Tempor dolor sit ipsum</p>
+                <p className="m-0">Welcome to YJ & Associates, your expert guide in Indian civil law. From contracts to civil disputes, we provide strategic counsel and effective advocacy for your legal needs.</p>
               </div>
               <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
                 <div className="icon-box bg-secondary text-primary mt-2 mb-4">
                   <i className="fa fa-2x fa-users"></i>
                 </div>
                 <h5 className="mb-4 px-4">Family Law</h5>
-                <p className="m-0">Takim stet justo elitr sea eirmod vero ipsum. Sed Stet clita sit duo dolor stet at at. Tempor dolor sit ipsum</p>
+                <p className="m-0">Navigate family matters with care. Our team offers compassionate support and expert guidance to resolve disputes and protect your loved ones' interests.</p>
               </div>
               <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
                 <div className="icon-box bg-secondary text-primary mt-2 mb-4">
                   <i className="fa fa-2x fa-hand-holding-usd"></i>
                 </div>
-                <h5 className="mb-4 px-4">Business Law</h5>
-                <p className="m-0">Takim stet justo elitr sea eirmod vero ipsum. Sed Stet clita sit duo dolor stet at at. Tempor dolor sit ipsum</p>
+                <h5 className="mb-4 px-4">Arbitration</h5>
+                <p className="m-0">Protect your business interests with our tailored corporate litigation solutions.</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-gavel"></i>
+                </div>
+                <h5 className="mb-4 px-4">Commercial Litigation</h5>
+                <p className="m-0">Protect your business interests with our tailored corporate litigation solutions.</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-gavel"></i>
+                </div>
+                <h5 className="mb-4 px-4">Corporate Litigation</h5>
+                <p className="m-0">Protect your business interests with our tailored corporate litigation solutions.</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-gavel"></i>
+                </div>
+                <h5 className="mb-4 px-4">Intellectual Property Rights</h5>
+                <p className="m-0">Protect your business interests with our tailored corporate litigation solutions.</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-gavel"></i>
+                </div>
+                <h5 className="mb-4 px-4">Legal Metrology</h5>
+                <p className="m-0">Protect your business interests with our tailored corporate litigation solutions.</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-gavel"></i>
+                </div>
+                <h5 className="mb-4 px-4">Labour & Employment Law</h5>
+                <p className="m-0">Protect your business interests with our tailored corporate litigation solutions.</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-gavel"></i>
+                </div>
+                <h5 className="mb-4 px-4">Motor Accident Claims</h5>
+                <p className="m-0">Protect your business interests with our tailored corporate litigation solutions.</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-gavel"></i>
+                </div>
+                <h5 className="mb-4 px-4">Property Litigation</h5>
+                <p className="m-0">Protect your business interests with our tailored corporate litigation solutions.</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-gavel"></i>
+                </div>
+                <h5 className="mb-4 px-4">Public Interest Litigation</h5>
+                <p className="m-0">Protect your business interests with our tailored corporate litigation solutions.</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-gavel"></i>
+                </div>
+                <h5 className="mb-4 px-4">Pro Bono Litigation</h5>
+                <p className="m-0">Protect your business interests with our tailored corporate litigation solutions.</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-gavel"></i>
+                </div>
+                <h5 className="mb-4 px-4">Real Estate Disputes</h5>
+                <p className="m-0">Protect your business interests with our tailored corporate litigation solutions.</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-gavel"></i>
+                </div>
+                <h5 className="mb-4 px-4">Regulatory Practice</h5>
+                <p className="m-0">Protect your business interests with our tailored corporate litigation solutions.</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-gavel"></i>
+                </div>
+                <h5 className="mb-4 px-4">SARFAESI Litigation</h5>
+                <p className="m-0">Protect your business interests with our tailored corporate litigation solutions.</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-gavel"></i>
+                </div>
+                <h5 className="mb-4 px-4">Technology Law</h5>
+                <p className="m-0">Protect your business interests with our tailored corporate litigation solutions.</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-gavel"></i>
+                </div>                
+                <h5 className="mb-4 px-4">Consumer Litigation</h5>
+                <p className="m-0">Protect your business interests with our tailored corporate litigation solutions.</p>
               </div>
               <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
                 <div className="icon-box bg-secondary text-primary mt-2 mb-4">
                   <i className="fa fa-2x fa-gavel"></i>
                 </div>
                 <h5 className="mb-4 px-4">Criminal Law</h5>
-                <p className="m-0">Takim stet justo elitr sea eirmod vero ipsum. Sed Stet clita sit duo dolor stet at at. Tempor dolor sit ipsum</p>
+                <p className="m-0">At the forefront of justice, our team stands ready to safeguard your rights. With unwavering dedication and strategic prowess, we navigate the complexities of the legal system to ensure your voice is heard and your rights are protected.</p>
               </div>
             </Slider>
             {/* Custom arrow buttons */}
