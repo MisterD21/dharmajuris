@@ -1,0 +1,104 @@
+import React, { useRef } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
+
+const PracticeArea = () => {
+  const sliderRef = useRef(null); // Reference to the slider component
+
+  // Event handler for previous button
+  const handlePrev = () => {
+    sliderRef.current.slickPrev(); // Go to the previous slide
+  };
+
+  // Event handler for next button
+  const handleNext = () => {
+    sliderRef.current.slickNext(); // Go to the next slide
+  };
+
+  // Define settings for the slider
+  const settings = {
+    dots: false, // Disable dots navigation
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, // Number of slides to show at a time
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024, // Adjust the number of slides for different screen sizes
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600, // Adjust the number of slides for different screen sizes
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
+  return (
+    <div className="container-fluid py-5">
+      <div className="container py-5">
+        <div className="row">
+          <div className="col-lg-3">
+            <h6 className="text-uppercase">Our Practice</h6>
+            <h1 className="mb-4">Our Practice Areas</h1>
+            <p>Invidunt lorem justo clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum</p>
+            <a href="" className="btn btn-primary mt-2">More Services</a>
+          </div>
+          <div className="col-lg-9 pt-5 pt-lg-0">
+            <div className="bg-primary rounded" style={{ height: '200px' }}></div>
+            {/* Use Slider component here */}
+            <Slider ref={sliderRef} {...settings} className="owl-carousel service-carousel position-relative" style={{ marginTop: '-180px', padding: '0 30px' }}>
+              {/* Slides */}
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-landmark"></i>
+                </div>
+                <h5 className="mb-4 px-4">Civil Law</h5>
+                <p className="m-0">Takim stet justo elitr sea eirmod vero ipsum. Sed Stet clita sit duo dolor stet at at. Tempor dolor sit ipsum</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-users"></i>
+                </div>
+                <h5 className="mb-4 px-4">Family Law</h5>
+                <p className="m-0">Takim stet justo elitr sea eirmod vero ipsum. Sed Stet clita sit duo dolor stet at at. Tempor dolor sit ipsum</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-hand-holding-usd"></i>
+                </div>
+                <h5 className="mb-4 px-4">Business Law</h5>
+                <p className="m-0">Takim stet justo elitr sea eirmod vero ipsum. Sed Stet clita sit duo dolor stet at at. Tempor dolor sit ipsum</p>
+              </div>
+              <div className="d-flex flex-column align-items-center text-center bg-white rounded pt-4">
+                <div className="icon-box bg-secondary text-primary mt-2 mb-4">
+                  <i className="fa fa-2x fa-gavel"></i>
+                </div>
+                <h5 className="mb-4 px-4">Criminal Law</h5>
+                <p className="m-0">Takim stet justo elitr sea eirmod vero ipsum. Sed Stet clita sit duo dolor stet at at. Tempor dolor sit ipsum</p>
+              </div>
+            </Slider>
+            {/* Custom arrow buttons */}
+            <div class="col-lg-9 pt-5 pt-lg-0 mx-auto text-center"> 
+                <button className="custom-prev-button" onClick={handlePrev}><FaAngleLeft /></button>
+                <button className="custom-next-button" onClick={handleNext}><FaAngleRight /></button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default PracticeArea;
