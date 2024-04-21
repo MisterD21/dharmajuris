@@ -82,6 +82,7 @@ const NavigationBar = () => {
                                 </div>
                             </div>
                         </NavDropdown>
+                        <Nav.Link as={Link} to="/Our People" className="nav-item nav-link">Our People</Nav.Link>
                         <Nav.Link as={Link} to="/Resoures" className="nav-item nav-link">Resoures</Nav.Link>
                         <Nav.Link as={Link} to="/OurClients" className="nav-item nav-link">Our Clients</Nav.Link>
                         <Nav.Link as={Link} to="/Careers" className="nav-item nav-link">Careers</Nav.Link>
