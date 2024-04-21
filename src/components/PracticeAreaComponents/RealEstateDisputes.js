@@ -5,7 +5,7 @@ const RealEstateDisputes = () => {
   
     return (
         <>
-            <HeaderComponent title="RealEstateDisputes
+            <HeaderComponent title="Real Estate Disputes
         " />
             <div className="container-fluid py-5">
                 <div className="container py-5">

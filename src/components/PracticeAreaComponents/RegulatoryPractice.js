@@ -6,7 +6,7 @@ const RegulatoryPractice
   
     return (
         <>
-            <HeaderComponent title="RegulatoryPractice
+            <HeaderComponent title="Regulatory Practice
             " />
             <div className="container-fluid py-5">
                 <div className="container py-5">

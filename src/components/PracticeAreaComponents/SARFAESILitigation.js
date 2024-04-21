@@ -5,7 +5,7 @@ const SARFAESILitigation = () => {
   
     return (
         <>
-            <HeaderComponent title="SARFAESILitigation" />
+            <HeaderComponent title="SARFAESI Litigation" />
             <div className="container-fluid py-5">
                 <div className="container py-5">
                     <div className="row">

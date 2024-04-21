@@ -5,7 +5,7 @@ const PublicInterestLitigation = () => {
   
     return (
         <>
-            <HeaderComponent title="PublicInterestLitigation" />
+            <HeaderComponent title="Public Interest Litigation" />
             <div className="container-fluid py-5">
                 <div className="container py-5">
                     <div className="row">

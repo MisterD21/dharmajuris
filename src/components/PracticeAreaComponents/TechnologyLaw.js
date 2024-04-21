@@ -5,7 +5,7 @@ const TechnologyLaw = () => {
   
     return (
         <>
-            <HeaderComponent title="TechnologyLaw" />
+            <HeaderComponent title="Technology Law" />
             <div className="container-fluid py-5">
                 <div className="container py-5">
                     <div className="row">
