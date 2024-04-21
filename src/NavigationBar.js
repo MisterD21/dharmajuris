@@ -53,27 +53,39 @@ const NavigationBar = () => {
                         <Nav.Link as={Link} to="/About">About Us</Nav.Link>
                         <NavDropdown title="Practice Area" id="practice-area-dropdown">
                             <div style={{ display: 'flex' }}>
-                            <div style={{ flex: 1 }}>
-                                <NavDropdown.Item as={Link} to="/PracticeArea/Page1">Page 1</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/PracticeArea/Page2">Page 2</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/PracticeArea/Page3">Page 3</NavDropdown.Item>
-                            </div>
-                            <div style={{ flex: 1 }}>
-                                <NavDropdown.Item as={Link} to="/PracticeArea/Page4">Page 4</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/PracticeArea/Page5">Page 5</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/PracticeArea/Page6">Page 6</NavDropdown.Item>
-                            </div>
-                            <div style={{ flex: 1 }}>
-                                <NavDropdown.Item as={Link} to="/PracticeArea/Page7">Page 7</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/PracticeArea/Page8">Page 8</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/PracticeArea/Page9">Page 9</NavDropdown.Item>
-                            </div>
+                                <div style={{ flex: 1 }}>
+                                    <NavDropdown.Item as={Link} to="/Arbitration">Arbitration</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/CivilLitigation">Civil Litigation</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/LegalMetrology">Legal Metrology</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/CommercialLitigation">Commercial Litigation</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/ConsumerLitigation">Consumer Litigation</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/RegulatoryPractice">Regulatory Practice</NavDropdown.Item>
+
+                                </div>
+                                <div style={{ flex: 1 }}>
+                                    <NavDropdown.Item as={Link} to="/CriminalLitigation">Criminal Litigation</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/CorporateLitigation">Corporate Litigation </NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/FamilyLitigation">Family Litigation</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/IntellectualPropertyRights">Intellectual Property Rights</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/LabourEmploymentLaw">Labour & Employment Law</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/SARFAESILitigation">SARFAESI Litigation</NavDropdown.Item>
+
+                                </div>
+                                <div style={{ flex: 1 }}>
+                                    <NavDropdown.Item as={Link} to="/MotorAccidentClaims">Motor Accident Claims</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/PropertyLitigation">Property Litigation</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/PublicInterestLitigation">Public Interest Litigation</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/ProBonoLitigation">Pro Bono Litigation</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/RealEstateDisputes">Real Estate Disputes</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to="/TechnologyLaw">Technology Law</NavDropdown.Item>
+
+                                </div>
                             </div>
                         </NavDropdown>
-                        <Nav.Link as={Link} to="/Contact" className="nav-item nav-link">Resoures</Nav.Link>
-                        <Nav.Link as={Link} to="/Contact" className="nav-item nav-link">Our Clients</Nav.Link>
-                        <Nav.Link as={Link} to="/Contact" className="nav-item nav-link">Careers</Nav.Link>
-                        <Nav.Link as={Link} to="/Contact" className="nav-item nav-link">Contact Us</Nav.Link>
+                        <Nav.Link as={Link} to="/Resoures" className="nav-item nav-link">Resoures</Nav.Link>
+                        <Nav.Link as={Link} to="/OurClients" className="nav-item nav-link">Our Clients</Nav.Link>
+                        <Nav.Link as={Link} to="/Careers" className="nav-item nav-link">Careers</Nav.Link>
+                        <Nav.Link as={Link} to="/ContactUs" className="nav-item nav-link">Contact Us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

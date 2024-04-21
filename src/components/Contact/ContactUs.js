@@ -2,7 +2,7 @@ import React from 'react';
 import ContactUsForm from './ContactUsForm'
 
 
-function Contact() {
+function ContactUs() {
   return (
     <>
 
@@ -28,4 +28,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactUs;
