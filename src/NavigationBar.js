@@ -46,6 +46,7 @@ const NavigationBar = () => {
                 </div>
                
                 <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
+                    <Navbar.Brand href="/">Justice</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
@@ -87,6 +88,23 @@ const NavigationBar = () => {
                         <Nav.Link as={Link} to="/OurClients" className="nav-item nav-link">Our Clients</Nav.Link>
                         <Nav.Link as={Link} to="/Careers" className="nav-item nav-link">Careers</Nav.Link>
                         <Nav.Link as={Link} to="/ContactUs" className="nav-item nav-link">Contact Us</Nav.Link>
+                            {/* <div style={{ flex: 1 }}>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page1">Page 1</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page2">Page 2</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page3">Page 3</NavDropdown.Item>
+                            </div>
+                            <div style={{ flex: 1 }}>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page4">Page 4</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page5">Page 5</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page6">Page 6</NavDropdown.Item>
+                            </div>
+                            <div style={{ flex: 1 }}>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page7">Page 7</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page8">Page 8</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to="/PracticeArea/Page9">Page 9</NavDropdown.Item>
+                            </div>
+                            </div>
+                        </NavDropdown> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
