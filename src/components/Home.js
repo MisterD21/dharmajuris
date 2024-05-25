@@ -1,10 +1,10 @@
 import React from 'react';
-import PracticeArea from './components/PracticeArea';
-import Footer from './components/Footer';
-import HeaderCarousels from './components/HeaderCarousels';
-import Navbar from './components/NavigationBar';
-import AboutUs from './components/About/AboutUs';
-import Appointment from './components/About/Appointment';
+import PracticeArea from './PracticeArea';
+import Footer from './Footer';
+import HeaderCarousels from './HeaderCarousels';
+import Navbar from './NavigationBar';
+import AboutUs from './About/AboutUs';
+import Appointment from './About/Appointment';
 
 function App() {
   return (

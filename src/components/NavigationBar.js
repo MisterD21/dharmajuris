@@ -7,12 +7,14 @@ const NavigationBar = () => {
     <>
         <div className="container-fluid">
         <div className="row">
-            <div className="col-lg-3 bg-secondary d-none d-lg-block">
+            <div className="col-lg-2 bg-secondary d-none d-lg-block">
                 <a href="index.html" className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <h1 className="m-0 display-9 text-primary text-uppercase">YJ & Associates</h1>
+                <h1 className="m-0 display-9 text-primary text-uppercase">
+                    YJ &<br /> <span className="small-text">ASS.</span>
+                </h1>
                 </a>
             </div>
-            <div className="col-lg-9">
+            <div className="col-lg-10">
                 <div className="row bg-white border-bottom d-none d-lg-flex">
                     <div className="col-lg-7 text-left">
                         <div className="h-100 d-inline-flex align-items-center py-2 px-3">
@@ -46,7 +48,7 @@ const NavigationBar = () => {
                 </div>
                
                 <Navbar collapseOnSelect expand="lg" bg="white" variant="light">
-                    <Navbar.Brand href="/">Justice</Navbar.Brand>
+                    {/* <Navbar.Brand href="/">Justice</Navbar.Brand> */}
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
@@ -83,11 +85,12 @@ const NavigationBar = () => {
                                 </div>
                             </div>
                         </NavDropdown>
-                        <Nav.Link as={Link} to="/Our People" className="nav-item nav-link">Our People</Nav.Link>
+                        <Nav.Link as={Link} to="/OurPeople" className="nav-item nav-link">Our People</Nav.Link>
                         <Nav.Link as={Link} to="/Resoures" className="nav-item nav-link">Resoures</Nav.Link>
                         <Nav.Link as={Link} to="/OurClients" className="nav-item nav-link">Our Clients</Nav.Link>
                         <Nav.Link as={Link} to="/Careers" className="nav-item nav-link">Careers</Nav.Link>
                         <Nav.Link as={Link} to="/ContactUs" className="nav-item nav-link">Contact Us</Nav.Link>
+                        <Nav.Link as={Link} to="/News" className="nav-item nav-link">News & Events</Nav.Link>
                             {/* <div style={{ flex: 1 }}>
                                 <NavDropdown.Item as={Link} to="/PracticeArea/Page1">Page 1</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to="/PracticeArea/Page2">Page 2</NavDropdown.Item>

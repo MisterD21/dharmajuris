@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import PracticeArea from '../../PracticeArea';
+import PracticeArea from '../PracticeArea';
 import PracticeAreaHeaderImage from './PracticeAreaHeaderImage';
 
 const PracticeAreaMain = () => {

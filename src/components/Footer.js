@@ -50,21 +50,21 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 mb-5">
                 <h4 className="font-weight-semi-bold text-primary mb-4">Popular Links</h4>
                 <div className="d-flex flex-column justify-content-start">
-                    <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>Home</a>
-                    <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>About</a>
-                    <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>Services</a>
-                    <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>Attorney</a>
-                    <a className="text-white" href="#"><i className="fa fa-angle-right mr-2"></i>Contact</a>
+                    <Link className="text-white mb-2" to="/Home"><i className="fa fa-angle-right mr-2"></i>Home</Link>
+                    <Link className="text-white mb-2" to="/About"><i className="fa fa-angle-right mr-2"></i>About</Link>
+                    <Link className="text-white mb-2" to="/Services"><i className="fa fa-angle-right mr-2"></i>Services</Link>
+                    <Link className="text-white mb-2" to="/Attorney"><i className="fa fa-angle-right mr-2"></i>Attorney</Link>
+                    <Link className="text-white mb-2" to="/ContactUs"><i className="fa fa-angle-right mr-2"></i>Contact</Link>
                 </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-5">
                 <h4 className="font-weight-semi-bold text-primary mb-4">Quick Links</h4>
                 <div className="d-flex flex-column justify-content-start">
-                    <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>FAQs</a>
-                    <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>Help</a>
-                    <a className="text-white mb-2" href="#"><i className="fa fa-angle-right mr-2"></i>Terms</a>
+                <Link className="text-white mb-2" to="/FAQs"><i className="fa fa-angle-right mr-2"></i>FAQs</Link>
+                    <Link className="text-white mb-2" to="/Help"><i className="fa fa-angle-right mr-2"></i>Help</Link>
+                    <Link className="text-white mb-2" to="/Terms"><i className="fa fa-angle-right mr-2"></i>Terms</Link>
                     <Link className="text-white mb-2" to="/Privacy"><i className="fa fa-angle-right mr-2"></i>Privacy</Link>
-                    <a className="text-white" href="#"><i className="fa fa-angle-right mr-2"></i>Site Map</a>
+                    {/* <a className="text-white" href="#"><i className="fa fa-angle-right mr-2"></i>Site Map</a> */}
                 </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-5">

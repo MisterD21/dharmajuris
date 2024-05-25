@@ -1,13 +1,12 @@
 import React from 'react';
-import Footer from './Footer';
-import NavigationBar from './NavigationBar';
-import Appointment from './components/About/Appointment';
-import Home from './Home'
+import Footer from './components/Footer';
+import NavigationBar from './components/NavigationBar';
+import Home from './components/Home'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './components/About/About';
 import Contact from './components/Contact/ContactUs';
 import PracticeAreaMain from './components/PracticeArea/PracticeAreaMain';
-import Privacy from './Privacy';
+import Privacy from './components/Privacy';
 import Arbitration from './components/PracticeAreaComponents/Arbitration';
 import CivilLitigation from './components/PracticeAreaComponents/CivilLitigation';
 import LegalMetrology from './components/PracticeAreaComponents/LegalMetrology';
@@ -27,13 +26,25 @@ import ProBonoLitigation from './components/PracticeAreaComponents/ProBonoLitiga
 import RealEstateDisputes from './components/PracticeAreaComponents/RealEstateDisputes';
 import TechnologyLaw from './components/PracticeAreaComponents/TechnologyLaw';
 import ContactUs from './components/Contact/ContactUs';
+import Terms from './components/Terms';
+import OurPeople from './components/OurPeople';
+import Resoures from './components/Resoures';
+import OurClients from './components/OurClients';
+import Careers from './components/Careers';
+import ScrollToTop from './components/ScrollToTop';
+import Services from './components/Services';
+import Attorney from './Attorney';
+import FAQs from './components/FAQs';
+import Help from './components/Help';
+import Blogs from './components/Blogs';
 
 function App() {
   return (
 
     <Router>
       <NavigationBar />
-      
+      {/* <Popup /> */}
+      <ScrollToTop />
       <Routes>
       <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
@@ -59,10 +70,18 @@ function App() {
         <Route path="/ProBonoLitigation" element={<ProBonoLitigation />} />
         <Route path="/RealEstateDisputes" element={<RealEstateDisputes />} />
         <Route path="/TechnologyLaw" element={<TechnologyLaw />} />
-        {/* <Route path="/Resoures" element={<Resoures />} />
+        <Route path="/Resoures" element={<Resoures />} />
         <Route path="/OurClients" element={<OurClients />} />
-        <Route path="/Careers" element={<Careers />} /> */}
+        <Route path="/Careers" element={<Careers />} />
         <Route path="/ContactUs" element={<ContactUs />} />
+        <Route path="/Terms" element={<Terms />} />
+        <Route path="/OurPeople" element={<OurPeople />} />
+        <Route path="/Services" element={<Services />} />
+        <Route path="/Attorney" element={<Attorney />} />
+        <Route path="/FAQs" element={<FAQs />} />
+        <Route path="/Help" element={<Help />} />
+        <Route path="/News" element={<Blogs />} />
+        
       </Routes>
       <Footer />
     </Router>

@@ -1,24 +1,24 @@
 
 import React from 'react';
-import HeaderComponent from './components/commonComponent/HeaderComponent';
+import HeaderComponent from './commonComponent/HeaderComponent';
 
-function Privacy() {
+function OurPeople() {
   return (
     <>
 
-        <HeaderComponent title="Privacy" />
+        <HeaderComponent title="OurPeople" />
    
         <div className="container-fluid py-5">
         <div className="container py-5">
             <div className="row">
 
-                <h1>this is privacy policy</h1>
+                <h1>this is OurPeople</h1>
                 
                 </div>
                 <br/>
                 <div className="row">
 
-                <p>this is privacy policy</p>
+                <p>this is OurPeople</p>
                 
                 </div>
         </div>
@@ -30,4 +30,4 @@ function Privacy() {
   );
 }
 
-export default Privacy;
+export default OurPeople;
