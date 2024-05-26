@@ -11,6 +11,7 @@ function OurClients() {
         <div className="container-fluid py-5">
         <div className="container py-5">
             <div className="row">
+                    <img className="img-fluid rounded" src="img/about.jpg" alt=""/>
 
                 <h1>this is OurClients</h1>
                 

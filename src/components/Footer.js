@@ -39,7 +39,7 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 mb-5">
                 <a href="index.html" className="navbar-brand">
                 <h1 className="m-0 mt-n2 display-9 text-primary text-uppercase" style={{ fontSize: '35px' }}>YJ & Associates</h1>                </a>
-                <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
+                <p>We uphold justice and ethical practice, offering personalized legal representation with integrity and professionalism. Inspired by our mentor, Mr. Karan Singh Jain, we provide tailored solutions and clear communication to achieve the best outcomes for our clients.</p>
                 <div className="d-flex justify-content-start mt-4">
                     <a className="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i className="fab fa-twitter"></i></a>
                     <a className="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i className="fab fa-facebook-f"></i></a>
@@ -68,13 +68,13 @@ const Footer = () => {
                 </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-5">
-                <h4 className="font-weight-semi-bold text-primary mb-4">Newsletter</h4>
-                <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu kasd sed ea duo ipsum.</p>
+                <h4 className="font-weight-semi-bold text-primary mb-4">Subscribe to Updates</h4>
+                <p>Stay informed with the latest updates from Yash Jain & Associates. By subscribing, you will receive regular updates on our services, insights, and events directly to your inbox.</p>
                 <div className="w-100">
                     <div className="input-group">
                         <input type="text" className="form-control border-0" style={{padding: '25px'}} placeholder="Your Email"/>
                         <div className="input-group-append">
-                            <button className="btn btn-primary px-4">Sign Up</button>
+                            <button className="btn btn-primary px-4">Subscribe</button>
                         </div>
                     </div>
                 </div>
