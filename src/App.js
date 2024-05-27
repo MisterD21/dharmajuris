@@ -28,14 +28,13 @@ import TechnologyLaw from './components/PracticeAreaComponents/TechnologyLaw';
 import ContactUs from './components/Contact/ContactUs';
 import Terms from './components/Terms';
 import OurPeople from './components/OurPeople';
-import Resoures from './components/Resoures';
 import OurClients from './components/OurClients';
 import Careers from './components/Careers';
 import ScrollToTop from './components/ScrollToTop';
 import Services from './components/Services';
 import Attorney from './Attorney';
-import FAQs from './components/FAQs';
-import Help from './components/Help';
+import SUBSCRIBING from './components/SUBSCRIBING';
+import Disclaimer from './components/Disclaimer';
 import Blogs from './components/Blogs';
 
 function App() {
@@ -70,7 +69,6 @@ function App() {
         <Route path="/ProBonoLitigation" element={<ProBonoLitigation />} />
         <Route path="/RealEstateDisputes" element={<RealEstateDisputes />} />
         <Route path="/TechnologyLaw" element={<TechnologyLaw />} />
-        <Route path="/Resoures" element={<Resoures />} />
         <Route path="/OurClients" element={<OurClients />} />
         <Route path="/Careers" element={<Careers />} />
         <Route path="/ContactUs" element={<ContactUs />} />
@@ -78,8 +76,8 @@ function App() {
         <Route path="/OurPeople" element={<OurPeople />} />
         <Route path="/Services" element={<Services />} />
         <Route path="/Attorney" element={<Attorney />} />
-        <Route path="/FAQs" element={<FAQs />} />
-        <Route path="/Help" element={<Help />} />
+        <Route path="/Subscribing" element={<SUBSCRIBING />} />
+        <Route path="/Disclaimer" element={<Disclaimer />} />
         <Route path="/News" element={<Blogs />} />
         
       </Routes>

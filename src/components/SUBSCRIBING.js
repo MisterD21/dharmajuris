@@ -1,8 +1,9 @@
 
 import React from 'react';
 import HeaderComponent from './commonComponent/HeaderComponent';
+import SubscriptionComponent from './SubscriptionComponent';
 
-function FAQs() {
+function SUBSCRIBING() {
   return (
     <>
 
@@ -27,6 +28,8 @@ function FAQs() {
 <p>To subscribe, please enter your email address below. By subscribing, you consent to receiving these communications from Yash Jain & Associates. You can unsubscribe at any time by clicking the "unsubscribe" link in our emails.</p>
                 
                 </div>
+                <br />
+                <SubscriptionComponent />
         </div>
         </div>
 
@@ -36,4 +39,4 @@ function FAQs() {
   );
 }
 
-export default FAQs;
+export default SUBSCRIBING;

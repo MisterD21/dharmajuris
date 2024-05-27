@@ -37,8 +37,8 @@ const Footer = () => {
         </div>
         <div className="row pt-5">
             <div className="col-lg-3 col-md-6 mb-5">
-                <a href="index.html" className="navbar-brand">
-                <h1 className="m-0 mt-n2 display-9 text-primary text-uppercase" style={{ fontSize: '35px' }}>YJ & Associates</h1>                </a>
+                {/* <a href="index.html" className="navbar-brand"> */}
+                <h1 className="m-0 mt-n2 display-9 text-primary text-uppercase" style={{ fontSize: '35px' }}>YJ & Associates</h1>                
                 <p>We uphold justice and ethical practice, offering personalized legal representation with integrity and professionalism. Inspired by our mentor, Mr. Karan Singh Jain, we provide tailored solutions and clear communication to achieve the best outcomes for our clients.</p>
                 <div className="d-flex justify-content-start mt-4">
                     <a className="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i className="fab fa-twitter"></i></a>
@@ -60,8 +60,8 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 mb-5">
                 <h4 className="font-weight-semi-bold text-primary mb-4">Quick Links</h4>
                 <div className="d-flex flex-column justify-content-start">
-                <Link className="text-white mb-2" to="/FAQs"><i className="fa fa-angle-right mr-2"></i>FAQs</Link>
-                    <Link className="text-white mb-2" to="/Help"><i className="fa fa-angle-right mr-2"></i>Help</Link>
+                <Link className="text-white mb-2" to="/Subscribing"><i className="fa fa-angle-right mr-2"></i>Subscribing</Link>
+                    <Link className="text-white mb-2" to="/Disclaimer"><i className="fa fa-angle-right mr-2"></i>Disclaimer</Link>
                     <Link className="text-white mb-2" to="/Terms"><i className="fa fa-angle-right mr-2"></i>Terms</Link>
                     <Link className="text-white mb-2" to="/Privacy"><i className="fa fa-angle-right mr-2"></i>Privacy</Link>
                     {/* <a className="text-white" href="#"><i className="fa fa-angle-right mr-2"></i>Site Map</a> */}

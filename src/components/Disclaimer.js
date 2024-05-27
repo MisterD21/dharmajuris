@@ -2,7 +2,7 @@
 import React from 'react';
 import HeaderComponent from './commonComponent/HeaderComponent';
 
-function Help() {
+function Disclaimer() {
   return (
     <>
 
@@ -34,4 +34,4 @@ function Help() {
   );
 }
 
-export default Help;
+export default Disclaimer;
