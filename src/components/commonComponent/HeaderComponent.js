@@ -1,4 +1,3 @@
-import React, { useRef } from 'react';
 
 const HeaderComponent = ({ title }) => {
   

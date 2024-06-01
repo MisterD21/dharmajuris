@@ -1,4 +1,3 @@
-import React, { useRef } from 'react';
 import HeaderComponent from '../commonComponent/HeaderComponent';
 
 const TechnologyLaw = () => {

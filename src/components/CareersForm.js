@@ -13,18 +13,62 @@ function CareersForm() {
     cv: null,
   });
 
+  const [isLoading, setIsLoading] = useState(false);
+  const [submissionStatus, setSubmissionStatus] = useState(null);
+
   const handleChange = (e) => {
     const { name, value, files } = e.target;
-    setFormData({
-      ...formData,
-      [name]: files ? files[0] : value,
-    });
+    if (name === 'phone') {
+      if (/^\d{0,10}$/.test(value) && (value.length === 0 || /^[1-9]/.test(value))) {
+        setFormData({
+          ...formData,
+          [name]: value,
+        });
+      }
+    } else {
+      setFormData({
+        ...formData,
+        [name]: files ? files[0] : value,
+      });
+    }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // You can handle form submission here, e.g., sending data to a server
+    setIsLoading(true);
+    const data = new FormData();
+    for (const key in formData) {
+      data.append(key, formData[key]);
+    }
+
+    try {
+      const response = await fetch('http://localhost:8082/api/careers/submit', {
+        method: 'POST',
+        body: data,
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const result = await response.text();
+      setSubmissionStatus(`Form submitted successfully! ${result}`);
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        college: '',
+        location: '',
+        month: '',
+        cgpa: '',
+        cv: null,
+      });
+    } catch (error) {
+      setSubmissionStatus(`Error submitting form: ${error.message}`);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -105,22 +149,23 @@ function CareersForm() {
           >
             <option value="">Desired Month</option>
             <option value="january">January</option>
-            <option value="february">March</option>
-            <option value="january">April</option>
-            <option value="february">May</option>
-            <option value="january">June</option>
-            <option value="february">July</option>
-            <option value="january">August</option>
-            <option value="february">September</option>
-            <option value="january">October</option>
-            <option value="february">November</option>
-            <option value="february">December</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
           </select>
         </div>
         <div style={{ marginBottom: '15px' }}>
           <input
             type="text"
-            name="CGPA"
+            name="cgpa"
             placeholder="CGPA *"
             value={formData.cgpa}
             onChange={handleChange}
@@ -141,9 +186,33 @@ function CareersForm() {
           type="submit"
           style={{ width: '100%', padding: '10px', borderRadius: '5px', border: 'none', backgroundColor: '#3737ee', color: 'white', fontWeight: 'bold' }}
         >
-          Submit
+          {isLoading ? 'Submitting...' : 'Submit'}
         </button>
       </form>
+      {isLoading && (
+        <div style={{ textAlign: 'center', margin: '20px 0' }}>
+          <div className="spinner" style={{
+            width: '40px',
+            height: '40px',
+            border: '5px solid #ccc',
+            borderTop: '5px solid #3737ee',
+            borderRadius: '50%',
+            animation: 'spin 1s linear infinite'
+          }}></div>
+          <style jsx>{`
+        @keyframes spin {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      `}</style>
+        </div>
+        
+      )}
+      {submissionStatus && <p>{submissionStatus}</p>}
     </div>
   );
 }

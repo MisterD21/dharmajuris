@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -9,12 +9,16 @@ const PracticeArea = () => {
 
   // Event handler for previous button
   const handlePrev = () => {
-    sliderRef.current.slickPrev(); // Go to the previous slide
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev(); // Go to the previous slide
+    }
   };
 
   // Event handler for next button
   const handleNext = () => {
-    sliderRef.current.slickNext(); // Go to the next slide
+    if (sliderRef.current) {
+      sliderRef.current.slickNext(); // Go to the next slide
+    }
   };
 
   // Define settings for the slider
@@ -24,6 +28,8 @@ const PracticeArea = () => {
     speed: 500,
     slidesToShow: 3, // Number of slides to show at a time
     slidesToScroll: 1,
+    autoplay: true, // Enable autoplay
+    autoplaySpeed: 3000, // Set autoplay speed to 3 seconds
     responsive: [
       {
         breakpoint: 1024, // Adjust the number of slides for different screen sizes
@@ -52,7 +58,7 @@ const PracticeArea = () => {
             <h6 className="text-uppercase">Our Practice</h6>
             <h1 className="mb-4">Our Practice Areas</h1>
             <p>Explore our diverse Practice Areas, offering comprehensive legal solutions tailored to your needs. From swift dispute resolutions to expert guidance in complex matters, our dedicated teams ensure confident navigation of legal challenges.</p>
-            <a href="" className="btn btn-primary mt-2">More Services</a>
+            {/* <a href="" className="btn btn-primary mt-2">More Services</a> */}
           </div>
           <div className="col-lg-9 pt-5 pt-lg-0">
             <div className="bg-primary rounded" style={{ height: '200px' }}></div>

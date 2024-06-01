@@ -3,46 +3,102 @@ import React, { useState, useEffect } from 'react';
 function Positions() {
   const [positions, setPositions] = useState([]);
   const [selectedJob, setSelectedJob] = useState(null);
-  const [showModal, setShowModal] = useState(false);
+  const [showDescriptionModal, setShowDescriptionModal] = useState(false);
+  const [showApplyModal, setShowApplyModal] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    mobile: '',
+    cv: null,
+    jobId: null,
+  });
 
   useEffect(() => {
-    // Dummy data to simulate fetched job positions
-    const dummyData = [
-      {
-        id: 1,
-        position: 'Software Engineer',
-        vacancies: 5,
-        experience: '2-4 years',
-        qualification: 'B.Tech in Computer Science',
-        description: 'Responsible for developing and maintaining software applications.',
-      },
-      {
-        id: 2,
-        position: 'Data Analyst',
-        vacancies: 3,
-        experience: '1-3 years',
-        qualification: 'B.Sc in Data Science',
-        description: 'Analyze and interpret complex data sets.',
-      },
-      // Add more dummy data as needed
-    ];
+    const fetchPositions = async () => {
+      try {
+        const response = await fetch('http://localhost:8082/api/job-listings');
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        const data = await response.json();
+        setPositions(data);
+      } catch (error) {
+        console.error('Error fetching positions:', error);
+      }
+    };
 
-    // Simulate API call
-    setTimeout(() => {
-      setPositions(dummyData);
-    }, 1000);
+    fetchPositions();
   }, []);
 
   const handleDescriptionClick = (job) => {
     setSelectedJob(job);
-    setShowModal(true);
+    setShowDescriptionModal(true);
   };
 
-  const handleCloseModal = () => {
-    setShowModal(false);
+  const handleCloseDescriptionModal = () => {
+    setShowDescriptionModal(false);
     setTimeout(() => {
       setSelectedJob(null);
-    }, 300); // Delay to allow the modal to fade out before resetting the selected job
+    }, 300);
+  };
+
+  const handleApplyClick = (job) => {
+    setSelectedJob(job);
+    setFormData((prevState) => ({
+      ...prevState,
+      jobId: job.id,
+    }));
+    setShowApplyModal(true);
+  };
+
+  const handleCloseApplyModal = () => {
+    setShowApplyModal(false);
+    setTimeout(() => {
+      setSelectedJob(null);
+    }, 300);
+  };
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleFileChange = (e) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      cv: e.target.files[0],
+    }));
+  };
+
+  const handleSubmitApplication = async (event) => {
+    event.preventDefault();
+
+    const data = new FormData();
+    data.append('name', formData.name);
+    data.append('email', formData.email);
+    data.append('mobile', formData.mobile);
+    data.append('cv', formData.cv);
+    data.append('jobId', formData.jobId);
+
+    try {
+      const response = await fetch('http://localhost:8082/api/applications', {
+        method: 'POST',
+        body: data,
+      });
+
+      if (response.ok) {
+        alert('Application submitted!');
+        handleCloseApplyModal();
+      } else {
+        alert('Failed to submit application');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred while submitting the application');
+    }
   };
 
   return (
@@ -50,7 +106,7 @@ function Positions() {
       <table style={{ width: '100%', borderCollapse: 'collapse' }}>
         <thead>
           <tr>
-            <th style={styles.th}>No.</th>
+            <th style={styles.th}>ID</th>
             <th style={styles.th}>Position</th>
             <th style={styles.th}>No. of Vacancy</th>
             <th style={styles.th}>Experience</th>
@@ -60,30 +116,62 @@ function Positions() {
           </tr>
         </thead>
         <tbody>
-          {positions.map((job, index) => (
+          {positions.map((job) => (
             <tr key={job.id}>
-              <td style={styles.td}>{index + 1}</td>
+              <td style={styles.td}>{job.id}</td>
               <td style={styles.td}>{job.position}</td>
-              <td style={styles.td}>{job.vacancies}</td>
+              <td style={styles.td}>{job.noOfVacancy}</td>
               <td style={styles.td}>{job.experience}</td>
               <td style={styles.td}>{job.qualification}</td>
               <td style={styles.td}>
                 <button style={{ ...styles.button, transition: 'background-color 0.3s' }} onClick={() => handleDescriptionClick(job)}>Description</button>
               </td>
               <td style={styles.td}>
-                <button style={styles.button}>Apply</button>
+                <button style={styles.button} onClick={() => handleApplyClick(job)}>Apply</button>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
 
-      {showModal && (
+      {showDescriptionModal && (
         <div style={{ ...styles.modalOverlay, transition: 'opacity 0.3s' }}>
           <div style={styles.modal}>
             <h2>{selectedJob.position}</h2>
-            <p>{selectedJob.description}</p>
-            <button style={styles.button} onClick={handleCloseModal}>Close</button>
+            <p>{selectedJob.jobDescription}</p>
+            <button style={styles.button} onClick={handleCloseDescriptionModal}>Close</button>
+          </div>
+        </div>
+      )}
+
+      {showApplyModal && (
+        <div style={{ ...styles.modalOverlay, transition: 'opacity 0.3s' }}>
+          <div style={styles.modal}>
+            <h2>Apply for {selectedJob.position}</h2>
+            <form onSubmit={handleSubmitApplication}>
+              <div style={styles.formGroup}>
+                <label>Job ID:</label>
+                <p>{selectedJob.id}</p>
+              </div>
+              <div style={styles.formGroup}>
+                <label>Name:</label>
+                <input type="text" name="name" required style={styles.input} value={formData.name} onChange={handleInputChange} />
+              </div>
+              <div style={styles.formGroup}>
+                <label>Email:</label>
+                <input type="email" name="email" required style={styles.input} value={formData.email} onChange={handleInputChange} />
+              </div>
+              <div style={styles.formGroup}>
+                <label>Mobile Number:</label>
+                <input type="tel" name="mobile" required style={styles.input} value={formData.mobile} onChange={handleInputChange} />
+              </div>
+              <div style={styles.formGroup}>
+                <label>CV (PDF):</label>
+                <input type="file" name="cv" accept="application/pdf" required style={styles.input} onChange={handleFileChange} />
+              </div>
+              <button type="submit" style={styles.button}>Submit</button>
+              <button type="button" style={styles.button} onClick={handleCloseApplyModal}>Cancel</button>
+            </form>
           </div>
         </div>
       )}
@@ -109,6 +197,7 @@ const styles = {
     border: 'none',
     borderRadius: '3px',
     cursor: 'pointer',
+    margin: '5px'
   },
   modalOverlay: {
     position: 'fixed',
@@ -128,6 +217,14 @@ const styles = {
     borderRadius: '5px',
     width: '500px',
     maxWidth: '100%',
+  },
+  formGroup: {
+    marginBottom: '15px',
+  },
+  input: {
+    width: '100%',
+    padding: '8px',
+    boxSizing: 'border-box',
   },
 };
 

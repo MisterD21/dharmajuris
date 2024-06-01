@@ -36,6 +36,7 @@ import Attorney from './Attorney';
 import SUBSCRIBING from './components/SUBSCRIBING';
 import Disclaimer from './components/Disclaimer';
 import Blogs from './components/Blogs';
+import JobListing from './components/JobListing';
 
 function App() {
   return (
@@ -79,7 +80,8 @@ function App() {
         <Route path="/Subscribing" element={<SUBSCRIBING />} />
         <Route path="/Disclaimer" element={<Disclaimer />} />
         <Route path="/News" element={<Blogs />} />
-        
+        <Route path="/job-listing" element={<JobListing />} />
+
       </Routes>
       <Footer />
     </Router>
