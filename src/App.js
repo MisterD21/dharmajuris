@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import NavigationBar from './components/NavigationBar';
-import Home from './components/Home'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
 import About from './components/About/About';
 import Contact from './components/Contact/ContactUs';
 import PracticeAreaMain from './components/PracticeArea/PracticeAreaMain';
@@ -34,19 +34,36 @@ import ScrollToTop from './components/ScrollToTop';
 import Services from './components/Services';
 import Attorney from './Attorney';
 import SUBSCRIBING from './components/SUBSCRIBING';
-import Disclaimer from './components/Disclaimer';
+import DisclaimerModal from './components/DisclaimerModal';
 import Blogs from './components/Blogs';
 import JobListing from './components/JobListing';
 
 function App() {
-  return (
+  const [isDisclaimerAccepted, setIsDisclaimerAccepted] = useState(false);
 
+  useEffect(() => {
+    const accepted = localStorage.getItem('disclaimerAccepted');
+    console.log('Disclaimer accepted from localStorage:', accepted); // Log the value retrieved from localStorage
+    setIsDisclaimerAccepted(accepted === 'true');
+  }, []);
+
+  const handleAccept = () => {
+    localStorage.setItem('disclaimerAccepted', 'true');
+    console.log('Disclaimer accepted'); // Log when disclaimer is accepted
+    setIsDisclaimerAccepted(true);
+  };
+
+  const handleDecline = () => {
+    console.log('Disclaimer declined'); // Log when disclaimer is declined
+    window.location.href = 'https://www.google.in';
+  };
+
+  return (
     <Router>
       <NavigationBar />
-      {/* <Popup /> */}
       <ScrollToTop />
       <Routes>
-      <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
@@ -78,14 +95,13 @@ function App() {
         <Route path="/Services" element={<Services />} />
         <Route path="/Attorney" element={<Attorney />} />
         <Route path="/Subscribing" element={<SUBSCRIBING />} />
-        <Route path="/Disclaimer" element={<Disclaimer />} />
         <Route path="/News" element={<Blogs />} />
         <Route path="/job-listing" element={<JobListing />} />
-
       </Routes>
       <Footer />
+
+      {!isDisclaimerAccepted && <DisclaimerModal onAccept={handleAccept} onDecline={handleDecline} />}
     </Router>
-    
   );
 }
 
