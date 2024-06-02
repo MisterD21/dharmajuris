@@ -37,6 +37,7 @@ import SUBSCRIBING from './components/SUBSCRIBING';
 import DisclaimerModal from './components/DisclaimerModal';
 import Blogs from './components/Blogs';
 import JobListing from './components/JobListing';
+import Disclaimer from './components/Disclaimer';
 
 function App() {
   const [isDisclaimerAccepted, setIsDisclaimerAccepted] = useState(false);
@@ -97,6 +98,7 @@ function App() {
         <Route path="/Subscribing" element={<SUBSCRIBING />} />
         <Route path="/News" element={<Blogs />} />
         <Route path="/job-listing" element={<JobListing />} />
+        <Route path="/Disclaimer" element={<Disclaimer />} />
       </Routes>
       <Footer />
 
