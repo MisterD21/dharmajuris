@@ -10,13 +10,15 @@ function Overview() {
         <div className="container py-1">
             <div className="row">
             <img className="img-fluid rounded" src="img/carousel-1.jpg" alt=""/>
-                <h1>What is Lorem Ipsum?</h1>
+                
                 
                 </div>
                 <br/>
                 <div className="row">
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                <p>At Yash Jain & Associates, we provide a dynamic and challenging environment for lawyers and support professionals. Our focus is on fostering careers that are intellectually enriching, globally oriented, and deeply satisfying on a personal level. Our firm champions a team-centric culture and is committed to supporting your professional development within a nurturing framework that allows you to refine and perfect your skills.
+We are looking for lawyers who excel in both written and verbal communication, demonstrate a proactive approach to learning, and possess the ability to analyze issues and devise solutions from both legal and business standpoints. Commitment, leadership qualities, and the ability to thrive in a team environment are essential attributes for our ideal candidate.
+</p>
                 
                 </div>
         </div>

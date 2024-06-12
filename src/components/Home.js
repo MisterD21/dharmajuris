@@ -21,7 +21,7 @@ function App() {
                     <h2 className="position-relative text-center bg-white text-primary rounded p-3 mt-4 mb-4 d-none d-lg-block" style={{ width: '812px', marginLeft: '-100px' }}>Decades of Dedication: A Legacy of Legal Excellence</h2>
                     <h6 className="text-uppercase">Learn About Us</h6>
                     <h1 className="mb-4">Our Mission</h1>
-                    <p>At <b>KSJYJ & Associates</b>, our mission is deeply rooted in our commitment to upholding the principles of justice, fairness, and ethical practice. We recognize the profound impact that legal matters can have on individuals, families, and businesses, and we are dedicated to providing compassionate and effective legal representation to our clients. Our mission is to serve as trusted advisors and advocates, guiding our clients through complex legal challenges with integrity, professionalism, and a relentless pursuit of excellence. We believe in the power of collaboration and teamwork, harnessing the diverse skills and expertise of our team to deliver innovative and tailored solutions that meet the unique needs of each client. Our ultimate goal is to achieve justice and fairness for our clients while upholding the highest standards of ethical conduct and legal professionalism.</p>
+                    <p>At <b>Yash Jain & Associates</b>, our mission is deeply rooted in our commitment to upholding the principles of justice, fairness, and ethical practice. We recognize the profound impact that legal matters can have on individuals, families, and businesses, and we are dedicated to providing compassionate and effective legal representation to our clients. Our mission is to serve as trusted advisors and advocates, guiding our clients through complex legal challenges with integrity, professionalism, and a relentless pursuit of excellence. We believe in the power of collaboration and teamwork, harnessing the diverse skills and expertise of our team to deliver innovative and tailored solutions that meet the unique needs of each client. Our ultimate goal is to achieve justice and fairness for our clients while upholding the highest standards of ethical conduct and legal professionalism.</p>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@ function App() {
                             </div>
                             <div className="ml-4">
                                 <h5>Best Law Practices</h5>
-                                <p className="m-0">At <b>KSJYJ & Associates</b>, we uphold the highest standards of legal excellence and professionalism, ensuring that our clients receive top-notch legal representation and advice</p>
+                                <p className="m-0">At <b>Yash Jain & Associates</b>, we uphold the highest standards of legal excellence and professionalism, ensuring that our clients receive top-notch legal representation and advice</p>
                             </div>
                         </div>
                         <div className="d-flex mb-4">
@@ -65,7 +65,7 @@ function App() {
                             </div>
                             <div className="ml-4">
                                 <h5>Results You Deserve</h5>
-                                <p className="m-0">With a track record of success and a dedication to achieving the best possible outcomes for our clients, <b>KSJYJ & Associates</b> is committed to delivering the results you deserve. We go above and beyond to protect your interests and advocate for your rights with diligence and determination.</p>
+                                <p className="m-0">With a track record of success and a dedication to achieving the best possible outcomes for our clients, <b>Yash Jain & Associates</b> is committed to delivering the results you deserve. We go above and beyond to protect your interests and advocate for your rights with diligence and determination.</p>
                             </div>
                         </div>
                     </div>

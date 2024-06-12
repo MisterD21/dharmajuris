@@ -74,7 +74,7 @@ function CareersForm() {
   return (
     <div style={{ padding: '20px', maxWidth: '600px', margin: 'auto' }}>
       <p style={{ fontWeight: '600', color: 'Black', marginBottom: '20px' }}>
-        We are enthused to bring onboard students who have chosen a career in law. The Firm offers significant opportunities for students to hone their legal skills. Students interested in exploring internship opportunities may send their CV by filling this form.
+      We are excited to welcome students pursuing a career in law to join our team. At Yash Jain & Associates, we provide significant opportunities for students to develop and refine their legal skills. If you are interested in exploring internship opportunities with us, please submit your CV by completing this form.
       </p>
       <form onSubmit={handleSubmit}>
         <div style={{ display: 'flex', gap: '10px', marginBottom: '15px' }}>
@@ -136,8 +136,8 @@ function CareersForm() {
             style={{ width: '100%', padding: '10px', borderRadius: '5px', border: '1px solid #ccc' }}
           >
             <option value="">Preferred Location</option>
-            <option value="location1">Location 1</option>
-            <option value="location2">Location 2</option>
+            <option value="location1">Gwalior</option>
+            <option value="location2">Morena</option>
           </select>
         </div>
         <div style={{ marginBottom: '15px' }}>

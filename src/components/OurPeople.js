@@ -52,7 +52,7 @@ function OurPeople() {
                 </div>
                 <div className="row">
 
-                <h1>P.K. Tiwari (B.A. LLB Advocate)</h1>
+                <h1>P.K. Tiwari (B.A. LLB, Advocate)</h1>
                 
                 </div>
                 <br/>
@@ -68,12 +68,14 @@ function OurPeople() {
                 </div>
                 <div className="row">
 
-                <h1>Yash Jain (B.B.A. LLB, Advocate)</h1>
+                <h1>Gautam Mishra (B.B.A. LLB, Advocate)</h1>
                 
                 </div>
                 <br/>
                 <div className="row">
-                <p>this is OurPeople</p>
+                <p>Mr. Gautam Mishra completed his B.B.A. LL.B (Hons.) from ICFAI University, Dehradun with around 4 years of experience in legal affairs. Excellent argument skills with experience addressing the Supreme Court, High Court, NCLAT, NCLT, NCRDC, APTEL and other Tribunals. 
+Mr. Gautam has experience in dealing with a variety of matters including SLPs, Writs, POSH Act, Cyber Crime, Consumer Disputes, Civil Disputes, Financial Matters, Insurance Matters, Recovery, Execution, Arbitration, Bail, and Section 138 of Negotiation Instrument Act, etc. He also assisted the POSH Committee established by the Indian Olympic Association.
+Mr. Gautam worked as a Special Correspondent at Lawbeat, News18, worked at the chambers of senior counsel, and reported from Delhi for a legal media organisation. His flair for news and networking has been an asset to the firm.</p>
                 
                 </div>
                 <div className="row">

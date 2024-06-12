@@ -4,36 +4,75 @@ import HeaderComponent from './commonComponent/HeaderComponent';
 // Define an array of client objects
 const clients = [
   {
-    name: 'Client 1',
-    image: 'img/team-1.jpg',
-    description: 'Description of Client 1'
-  },
-  {
-    name: 'Client 2',
-    image: 'img/team-2.jpg',
-    description: 'Description of Client 2'
-  },
-  {
-    name: 'Client 3',
+    name: 'Aditya Birla Sun Life Insurance Company Limited',
     image: 'img/team-3.jpg',
-    description: 'Description of Client 3'
+    
   },
   {
-    name: 'Client 5',
+    name: 'Bajaj Allianz Life Insurance Company Limited',
+    image: 'img/team-3.jpg',
+    
+  },
+  {
+    name: 'Bharti Axa Life Insurance Company Limited',
+    image: 'img/team-3.jpg',
+    
+  },
+  {
+    name: 'PNB Met Life Insurance Company Limited',
     image: 'img/team-4.jpg',
-    description: 'Description of Client 2'
+    
   },
   {
-    name: 'Client 5',
+    name: 'Zuno Insurance Company Limited',
     image: 'img/team-5.jpg',
-    description: 'Description of Client 3'
-  }
+    
+  },
+  {
+    name: 'Life Insurance Corporation of India',
+    image: 'img/team-4.jpg',
+    
+  },
+  {
+    name: 'Bajaj Finance Limited',
+    image: 'img/team-4.jpg',
+    
+  },
+  {
+    name: 'L & T Finance Limited',
+    image: 'img/team-4.jpg',
+    
+  },
+  {
+    name: 'Bajaj Hosuing Finance Limited',
+    image: 'img/team-4.jpg',
+    
+  },
+  {
+    name: 'Vastu Housing Finance Limited',
+    image: 'img/team-4.jpg',
+  },
+  {
+    name: 'Agarwal Movers and Packers',
+    image: 'img/team-4.jpg',
+    
+  },
+  {
+    name: 'Sunbeam Generators',
+    image: 'img/team-4.jpg',
+    
+  },
+  {
+    name: 'Langar Bidi Company Poona',
+    image: 'img/team-4.jpg',
+    
+  },
 ];
 
 function OurClients() {
   return (
     <>
-      <HeaderComponent title="OurClients" />
+      <HeaderComponent title="Our Clients" />
       <div className="container-fluid py-5">
         <div className="container py-5">
           <div className="row">
