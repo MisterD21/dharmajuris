@@ -68,6 +68,7 @@ function Careers() {
               </ul>
               <div className="tab-content py-4">
                 {renderContent()}
+                
               </div>
             </div>
           </div>

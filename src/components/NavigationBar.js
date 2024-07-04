@@ -8,11 +8,12 @@ const NavigationBar = () => {
         <div className="container-fluid">
         <div className="row">
             <div className="col-lg-2 bg-secondary d-none d-lg-block">
-                <a href="index.html" className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                <Link className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center" to="/Home">
                 <h1 className="m-0 display-9 text-primary text-uppercase">
                     YJ &<br /> <span className="small-text">ASS.</span>
                 </h1>
-                </a>
+                </Link>
+               
             </div>
             <div className="col-lg-10">
                 <div className="row bg-white border-bottom d-none d-lg-flex">
@@ -87,7 +88,7 @@ const NavigationBar = () => {
                         </NavDropdown>
                         <Nav.Link as={Link} to="/OurPeople" className="nav-item nav-link">Our People</Nav.Link>
                         <Nav.Link as={Link} to="/OurClients" className="nav-item nav-link">Our Clients</Nav.Link>
-                        <Nav.Link as={Link} to="/News" className="nav-item nav-link">News & Events</Nav.Link>
+                        {/* <Nav.Link as={Link} to="/News" className="nav-item nav-link">News & Events</Nav.Link> */}
                         <Nav.Link as={Link} to="/Careers" className="nav-item nav-link">Careers</Nav.Link>
                         <Nav.Link as={Link} to="/ContactUs" className="nav-item nav-link">Contact Us</Nav.Link>
                         

@@ -1,82 +1,83 @@
 import React, { useState } from 'react';
 
 function CareersForm() {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    college: '',
-    location: '',
-    month: '',
-    cgpa: '',
-    cv: null,
-  });
+  
+  // const [formData, setFormData] = useState({
+  //   firstName: '',
+  //   lastName: '',
+  //   email: '',
+  //   phone: '',
+  //   college: '',
+  //   location: '',
+  //   month: '',
+  //   cgpa: '',
+  //   cv: null,
+  // });
 
-  const [isLoading, setIsLoading] = useState(false);
-  const [submissionStatus, setSubmissionStatus] = useState(null);
+  // const [isLoading, setIsLoading] = useState(false);
+  // const [submissionStatus, setSubmissionStatus] = useState(null);
 
-  const handleChange = (e) => {
-    const { name, value, files } = e.target;
-    if (name === 'phone') {
-      if (/^\d{0,10}$/.test(value) && (value.length === 0 || /^[1-9]/.test(value))) {
-        setFormData({
-          ...formData,
-          [name]: value,
-        });
-      }
-    } else {
-      setFormData({
-        ...formData,
-        [name]: files ? files[0] : value,
-      });
-    }
-  };
+  // const handleChange = (e) => {
+  //   const { name, value, files } = e.target;
+  //   if (name === 'phone') {
+  //     if (/^\d{0,10}$/.test(value) && (value.length === 0 || /^[1-9]/.test(value))) {
+  //       setFormData({
+  //         ...formData,
+  //         [name]: value,
+  //       });
+  //     }
+  //   } else {
+  //     setFormData({
+  //       ...formData,
+  //       [name]: files ? files[0] : value,
+  //     });
+  //   }
+  // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    const data = new FormData();
-    for (const key in formData) {
-      data.append(key, formData[key]);
-    }
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setIsLoading(true);
+  //   const data = new FormData();
+  //   for (const key in formData) {
+  //     data.append(key, formData[key]);
+  //   }
 
-    try {
-      const response = await fetch('http://localhost:8082/api/careers/submit', {
-        method: 'POST',
-        body: data,
-      });
+  //   try {
+  //     const response = await fetch('http://localhost:8082/api/careers/submit', {
+  //       method: 'POST',
+  //       body: data,
+  //     });
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
+  //     if (!response.ok) {
+  //       throw new Error(`HTTP error! Status: ${response.status}`);
+  //     }
 
-      const result = await response.text();
-      setSubmissionStatus(`Form submitted successfully! ${result}`);
-      setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        college: '',
-        location: '',
-        month: '',
-        cgpa: '',
-        cv: null,
-      });
-    } catch (error) {
-      setSubmissionStatus(`Error submitting form: ${error.message}`);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  //     const result = await response.text();
+  //     setSubmissionStatus(`Form submitted successfully! ${result}`);
+  //     setFormData({
+  //       firstName: '',
+  //       lastName: '',
+  //       email: '',
+  //       phone: '',
+  //       college: '',
+  //       location: '',
+  //       month: '',
+  //       cgpa: '',
+  //       cv: null,
+  //     });
+  //   } catch (error) {
+  //     setSubmissionStatus(`Error submitting form: ${error.message}`);
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
 
   return (
     <div style={{ padding: '20px', maxWidth: '600px', margin: 'auto' }}>
       <p style={{ fontWeight: '600', color: 'Black', marginBottom: '20px' }}>
-      We are excited to welcome students pursuing a career in law to join our team. At Yash Jain & Associates, we provide significant opportunities for students to develop and refine their legal skills. If you are interested in exploring internship opportunities with us, please submit your CV by completing this form.
+      We are excited to welcome students pursuing a career in law to join our team. At Yash Jain & Associates, we provide significant opportunities for students to develop and refine their legal skills. If you are interested in exploring internship opportunities with us, please send your CV on mail advashj@gmail.com.
       </p>
-      <form onSubmit={handleSubmit}>
+      {/* <form onSubmit={handleSubmit}>
         <div style={{ display: 'flex', gap: '10px', marginBottom: '15px' }}>
           <input
             type="text"
@@ -188,8 +189,8 @@ function CareersForm() {
         >
           {isLoading ? 'Submitting...' : 'Submit'}
         </button>
-      </form>
-      {isLoading && (
+      </form> */}
+      {/* {/* {isLoading && (
         <div style={{ textAlign: 'center', margin: '20px 0' }}>
           <div className="spinner" style={{
             width: '40px',
@@ -212,9 +213,9 @@ function CareersForm() {
         </div>
         
       )}
-      {submissionStatus && <p>{submissionStatus}</p>}
+      {submissionStatus && <p>{submissionStatus}</p>} */}
     </div>
-  );
+  ); 
 }
 
 export default CareersForm;

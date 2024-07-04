@@ -71,7 +71,15 @@ function ContactUsForm() {
             <div className="col-lg-6 mb-5 mb-lg-0">
               <div className="contact-form">
                 <div id="success"></div>
-                <form name="sentMessage" id="contactForm" noValidate onSubmit={handleSubmit}>
+                <h1>Yash Jain & Associates</h1>
+                <h4>Call us at +91 9806204529</h4>
+                <h4>Mail us at advashj@gmail.com</h4>
+                <br/> 
+                High Court Main Building
+                <br/> 
+                City Center, Jiwaji University, 
+                <br />Mahalgaon, Gwalior, Madhya Pradesh 474011
+                {/* <form name="sentMessage" id="contactForm" noValidate onSubmit={handleSubmit}>
                   <div className="form-row">
                     <div className="col-sm-6 control-group">
                       <input
@@ -140,6 +148,7 @@ function ContactUsForm() {
                     </button>
                   </div>
                 </form>
+                 */}
                 {responseMessage && <p>{responseMessage}</p>}
               </div>
             </div>

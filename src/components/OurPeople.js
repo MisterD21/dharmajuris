@@ -78,26 +78,8 @@ Mr. Gautam has experience in dealing with a variety of matters including SLPs, 
 Mr. Gautam worked as a Special Correspondent at Lawbeat, News18, worked at the chambers of senior counsel, and reported from Delhi for a legal media organisation. His flair for news and networking has been an asset to the firm.</p>
                 
                 </div>
-                <div className="row">
-
-                <h1>Yash Jain (B.B.A. LLB, Advocate)</h1>
                 
-                </div>
-                <br/>
-                <div className="row">
-                <p>this is OurPeople</p>
                 
-                </div>
-                <div className="row">
-
-                <h1>Yash Jain (B.B.A. LLB, Advocate)</h1>
-                
-                </div>
-                <br/>
-                <div className="row">
-                <p>this is OurPeople</p>
-                
-                </div>
         </div>
         </div>
 

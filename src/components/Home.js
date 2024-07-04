@@ -5,6 +5,7 @@ import HeaderCarousels from './HeaderCarousels';
 import Navbar from './NavigationBar';
 import AboutUs from './About/AboutUs';
 import Appointment from './About/Appointment';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -80,7 +81,8 @@ function App() {
                 <div className="row h-100 align-items-center justify-content-center">
                     <div className="col-lg-7 text-center">
                         <h1 className="text-white mb-4">Let's get started. Call us now for a Free Consultation</h1>
-                        <a className="btn btn-primary py-3 px-5 mt-2" href="#">Call Us Now</a>
+                        <Link className="btn btn-primary py-3 px-5 mt-2" to="/Contact">Get An Appointment</Link>
+                        {/* <a className="btn btn-primary py-3 px-5 mt-2" href="#">Call Us Now</a> */}
                     </div>
                 </div>
             </div>

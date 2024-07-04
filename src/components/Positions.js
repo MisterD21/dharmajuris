@@ -130,7 +130,9 @@ function Positions() {
                 <button style={styles.button} onClick={() => handleApplyClick(job)}>Apply</button>
               </td>
             </tr>
+            
           ))}
+          <h4>Currently there is no openings.</h4>
         </tbody>
       </table>
 

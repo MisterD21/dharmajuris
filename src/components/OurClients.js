@@ -4,69 +4,69 @@ import HeaderComponent from './commonComponent/HeaderComponent';
 // Define an array of client objects
 const clients = [
   {
-    name: 'Aditya Birla Sun Life Insurance Company Limited',
-    image: 'img/team-3.jpg',
+    // name: 'Aditya Birla Sun Life Insurance Company Limited',
+    image: 'img/adityaBirla.jpg',
     
   },
   {
-    name: 'Bajaj Allianz Life Insurance Company Limited',
-    image: 'img/team-3.jpg',
+    // name: 'Bajaj Allianz Life Insurance Company Limited',
+    image: 'img/bajaj.jpeg',
     
   },
   {
-    name: 'Bharti Axa Life Insurance Company Limited',
-    image: 'img/team-3.jpg',
+    // name: 'Bharti Axa Life Insurance Company Limited',
+    image: 'img/bharti.png',
     
   },
   {
-    name: 'PNB Met Life Insurance Company Limited',
-    image: 'img/team-4.jpg',
+    // name: 'PNB Met Life Insurance Company Limited',
+    image: 'img/Pnb-metlife-logo.jpg',
     
   },
   {
-    name: 'Zuno Insurance Company Limited',
-    image: 'img/team-5.jpg',
+    // name: 'Zuno Insurance Company Limited',
+    image: 'img/zuno.png',
     
   },
   {
-    name: 'Life Insurance Corporation of India',
-    image: 'img/team-4.jpg',
+    // name: 'Life Insurance Corporation of India',
+    image: 'img/Life Insurance Corporation of India.png',
     
   },
   {
-    name: 'Bajaj Finance Limited',
-    image: 'img/team-4.jpg',
+    // name: 'Bajaj Finance Limited',
+    image: 'img/Bajaj Finance Limited.jpeg',
     
   },
   {
-    name: 'L & T Finance Limited',
-    image: 'img/team-4.jpg',
+    // name: 'L & T Finance Limited',
+    image: 'img/LT Finance Logo - JPG 3 1.jpg.webp',
     
   },
   {
-    name: 'Bajaj Hosuing Finance Limited',
-    image: 'img/team-4.jpg',
+    // name: 'Bajaj Hosuing Finance Limited',
+    image: 'img/xlarge_Bajaj_Housing_Finance_IPO_efa94fb5b8.png.jpeg',
     
   },
   {
-    name: 'Vastu Housing Finance Limited',
-    image: 'img/team-4.jpg',
+    // name: 'Vastu Housing Finance Limited',
+    image: 'img/vastu-housing-finance.webp',
   },
   {
-    name: 'Agarwal Movers and Packers',
-    image: 'img/team-4.jpg',
+    // name: 'Agarwal Movers and Packers',
+    image: 'img/main-qimg-c51064d7420e0c393365367b7ca9842c.gif',
     
   },
   {
-    name: 'Sunbeam Generators',
-    image: 'img/team-4.jpg',
+    // name: 'Sunbeam Generators',
+    image: 'img/images.jpeg',
     
   },
-  {
-    name: 'Langar Bidi Company Poona',
-    image: 'img/team-4.jpg',
+  // {
+  //   name: 'Langar Bidi Company Poona',
+  //   image: 'img/bharti.png',
     
-  },
+  // },
 ];
 
 function OurClients() {

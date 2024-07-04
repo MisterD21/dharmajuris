@@ -35,7 +35,7 @@ import Services from './components/Services';
 import Attorney from './Attorney';
 import SUBSCRIBING from './components/SUBSCRIBING';
 import DisclaimerModal from './components/DisclaimerModal';
-import Blogs from './components/Blogs';
+// import Blogs from './components/Blogs';
 import JobListing from './components/JobListing';
 import Disclaimer from './components/Disclaimer';
 
@@ -96,7 +96,7 @@ function App() {
         <Route path="/Services" element={<Services />} />
         <Route path="/Attorney" element={<Attorney />} />
         <Route path="/Subscribing" element={<SUBSCRIBING />} />
-        <Route path="/News" element={<Blogs />} />
+        {/* <Route path="/News" element={<Blogs />} /> */}
         <Route path="/job-listing" element={<JobListing />} />
         <Route path="/Disclaimer" element={<Disclaimer />} />
       </Routes>
