@@ -130,7 +130,7 @@ const Footer = () => {
         </div>
         <div className="row p-4 mt-5 mx-0" style={{ background: 'rgba(256, 256, 256, .05)' }}>
           <div className="col-md-6 text-center text-md-left mb-3 mb-md-0">
-            <p className="m-0 text-white">&copy; <a className="font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved.</p>
+            <p className="m-0 text-white">&copy; <a className="font-weight-bold" href="#">Yash Jain & Associates</a>. All Rights Reserved.</p>
           </div>
           <div className="col-md-6 text-center text-md-right">
             <p className="m-0 text-white">Designed by <a className="font-weight-bold" href="http://terminalgeeks.com" target="_blank" rel="noopener noreferrer">TerminalGeeks</a></p>
