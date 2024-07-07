@@ -21,12 +21,10 @@ function Careers() {
   };
 
   const tabStyle = {
-    color: '#373737e',
-  };
-
-  const activeTabStyle = {
-    backgroundColor: '#373737e',
-    // color: 'brown',
+    color: '#373737',
+    marginRight: '10px', // Adjust the gap between tabs
+    cursor: 'pointer', // Add cursor pointer
+    borderBottom: activeTab === 'overview' ? '2px solid #37373f' : 'none', // Highlight active tab with #37373f color
   };
 
   return (
@@ -41,7 +39,7 @@ function Careers() {
                 <li className="nav-item">
                   <button
                     className="nav-link"
-                    style={activeTab === 'overview' ? activeTabStyle : tabStyle}
+                    style={tabStyle}
                     onClick={() => setActiveTab('overview')}
                   >
                     Overview
@@ -50,7 +48,7 @@ function Careers() {
                 <li className="nav-item">
                   <button
                     className="nav-link"
-                    style={activeTab === 'internships' ? activeTabStyle : tabStyle}
+                    style={tabStyle}
                     onClick={() => setActiveTab('internships')}
                   >
                     Internships
@@ -59,7 +57,7 @@ function Careers() {
                 <li className="nav-item">
                   <button
                     className="nav-link"
-                    style={activeTab === 'positions' ? activeTabStyle : tabStyle}
+                    style={tabStyle}
                     onClick={() => setActiveTab('positions')}
                   >
                     Open Positions
@@ -68,7 +66,6 @@ function Careers() {
               </ul>
               <div className="tab-content py-4">
                 {renderContent()}
-                
               </div>
             </div>
           </div>

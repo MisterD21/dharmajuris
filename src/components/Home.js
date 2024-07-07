@@ -6,6 +6,7 @@ import Navbar from './NavigationBar';
 import AboutUs from './About/AboutUs';
 import Appointment from './About/Appointment';
 import { Link } from 'react-router-dom';
+import ClientSlider from './ClientSlider';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         </div>
     </div>
      
+    <ClientSlider />
     <PracticeArea />
     <Appointment />
     <div className="container-fluid py-5">

@@ -11,3 +11,5 @@ npm install react-router-dom
 npm install react-router-dom@latest
 npm install react-icons
 npm install react-datepicker@latest
+
+npm install react-slick slick-carousel

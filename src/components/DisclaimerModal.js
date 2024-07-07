@@ -1,23 +1,86 @@
 import React from 'react';
 
 function DisclaimerModal({ onAccept, onDecline }) {
+  const modalStyle = {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    zIndex: 1000, // Ensure modal appears above other content
+  };
+
+  const modalDialogStyle = {
+    maxWidth: '90%',
+    width: 'auto',
+    margin: 0,
+  };
+
+  const modalContentStyle = {
+    width: '100%',
+    maxWidth: '600px', // Adjust max-width as needed
+    backgroundColor: '#fff',
+    borderRadius: '8px',
+    overflow: 'hidden',
+  };
+
+  const modalHeaderStyle = {
+    backgroundColor: '#37373f',
+    color: '#fff',
+    padding: '15px',
+  };
+
+  const modalBodyStyle = {
+    padding: '15px',
+    maxHeight: 'calc(100vh - 200px)', // Adjust max-height if needed
+    overflowY: 'auto',
+  };
+
+  const modalFooterStyle = {
+    backgroundColor: '#f0f0f0',
+    padding: '15px',
+    textAlign: 'right',
+  };
+
+  const buttonPrimaryStyle = {
+    backgroundColor: '#37373f',
+    color: '#fff',
+    border: 'none',
+    padding: '8px 16px',
+    cursor: 'pointer',
+  };
+
+  const buttonSecondaryStyle = {
+    backgroundColor: '#ccc',
+    color: '#333',
+    border: 'none',
+    padding: '8px 16px',
+    cursor: 'pointer',
+  };
+
   return (
-    <div className="modal" style={{ display: 'block', backgroundColor: 'rgba(0,0,0,0.5)' }}>
-      <div className="modal-dialog">
-        <div className="modal-content">
-          <div className="modal-header">
-            <h5 className="modal-title">Disclaimer</h5>
+    <div className="modal" style={modalStyle}>
+      <div className="modal-dialog modal-dialog-centered" style={modalDialogStyle}>
+        <div className="modal-content" style={modalContentStyle}>
+          <div className="modal-header" style={modalHeaderStyle}>
+            <h5 className="modal-title" style={{ color: '#fff' }}>Disclaimer & Confirmation</h5>
           </div>
-          <div className="modal-body">
-            {/* <p>This website has been designed only for the purposes of dissemination of basic information on Yash Jain & Associates; information which is otherwise available on the internet, various public platforms and social media. Careful attention has been given to ensure that the information provided herein is accurate and up-to-date. However, Yash Jain & Associates is not responsible for any reliance that a reader places on such information and shall not be liable for any loss or damage caused due to any inaccuracy in or exclusion of any information, or its interpretation thereof. Reader is advised to confirm the veracity of the same from independent and expert sources.</p>
-            <p>This website is not an attempt to advertise or solicit clients, and does not seek to create or invite any lawyer-client relationship. The links provided on this website are to facilitate access to basic information on Yash Jain & Associates, and, to share the various thought leadership initiatives undertaken by it. The content herein or on such links should not be construed as a legal reference or legal advice. Readers are advised not to act on any information contained herein or on the links and should refer to legal counsels and experts in their respective jurisdictions for further information and to determine its impact.</p>
-            <p>Yash Jain & Associates advises against the use of the communication platform provided on this website for exchange of any confidential, business or politically sensitive information. User is requested to use his or her judgment and exchange of any such information shall be solely at the user’s risk.</p> */}
-            <p>Yash Jain & Associates uses cookies on its website to improve its usability. This helps us in providing a good user experience and to also help in improving our website. By continuing to use our website without changing your privacy settings, you agree to use our cookies.</p>
-            <p>Terms of use and Privacy policy</p>
+          <div className="modal-body" style={modalBodyStyle}>
+            <p>As per the rules of the Bar Council of India, we are not permitted to solicit work and advertise. By clicking on the “I agree” below, the user acknowledges the following:</p>
+            <ul>
+              <li>There has been no advertisement, personal communication, solicitation, invitation or inducement of any sort whatsoever from us or any of our members to solicit any work through this website.</li>
+              <li>The user wishes to gain more information about us for his/her own information and use.</li>
+              <li>The information about us is provided to the user only on his/her specific request and any information obtained or materials downloaded from this website is completely at the user’s volition and any transmission, receipt or use of this site would not create any lawyer-client relationship.</li>
+              <li>The information provided under this website is solely available at your request for informational purposes only, should not be interpreted as soliciting or advertisement. We are not liable for any consequence of any action taken by the user relying on material / information provided under this website. In cases where the user has any legal issues, he/she in all cases must seek independent legal advice.</li>
+            </ul>
           </div>
-          <div className="modal-footer">
-            <button className="btn btn-primary" onClick={onAccept}>Accept</button>
-            <button className="btn btn-secondary" onClick={onDecline}>Decline</button>
+          <div className="modal-footer" style={modalFooterStyle}>
+            <button className="btn btn-primary" style={buttonPrimaryStyle} onClick={onAccept}>I Agree</button>
+            {/* <button className="btn btn-secondary" style={buttonSecondaryStyle} onClick={onDecline}>Decline</button> */}
           </div>
         </div>
       </div>

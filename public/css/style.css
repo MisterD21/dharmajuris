@@ -9910,3 +9910,17 @@ h4, h5, h6 {
   padding: 0;
   list-style-type: none;
 }
+
+
+/* App.css */
+
+/* Apply text-align: justify to all paragraphs and any text-containing elements */
+body, p, span {
+  text-align: justify;
+}
+
+/* Additional styles for better readability */
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
