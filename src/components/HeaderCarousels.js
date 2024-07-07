@@ -14,7 +14,7 @@ const phoneNumber = "9806204529";
                     <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div className="p-3" style={{ maxWidth: '900px' }}>
                             <h4 className="text-white text-uppercase mb-4" style={{ letterSpacing: '3px' }}>Best Law Agency</h4>
-                            <h3 className="display-2 text-capitalize text-white mb-4">Our fighting Is for your justice</h3>
+                            <h3 className="display-2 text-capitalize text-white mb-4">Our Fight Is For Your Justice</h3>
                             {/* <a className="btn btn-primary py-3 px-5 mt-2" href="#">Get An Appointment</a> */}
                             <Link className="btn btn-primary py-3 px-5 mt-2" to="/Contact">Get An Appointment</Link>
                         </div>
