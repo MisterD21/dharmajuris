@@ -72,6 +72,9 @@
                   <div className="contact-form">
                     <div id="success"></div>
                     <h1>Yash Jain & Associates</h1>
+                    <div>
+    <hr style={{ borderTop: '1px solid #ccc' }} />
+  </div>
                     <h4 className="m-0" onClick={() => window.open('tel:+91-9806204529')}>
                     <i class="fas fa-phone"></i> +91-9806204529
     </h4>
@@ -81,11 +84,13 @@
         <i class="fas fa-envelope"></i> contact@yashjainandassociates.com
         </a>
       </h4>
-                    <br/> 
-                    <i class="fas fa-envelope"></i> Pragati Nagar, Near St. Thomas
-                    <br/> 
-                    School, Shabad Pratap Aashram,
-                    <br />Gwalior (M.P)- 474012
+      <div>
+    <hr style={{ borderTop: '1px solid #ccc' }} />
+  </div>
+                    <h4><i class="fas fa-building"></i> Pragati Nagar, Near St. Thomas</h4>
+                    
+                    <h4>School, Shabad Pratap Aashram,</h4>
+                    <h4>Gwalior (M.P)- 474012</h4>
                     {/* <form name="sentMessage" id="contactForm" noValidate onSubmit={handleSubmit}>
                       <div className="form-row">
                         <div className="col-sm-6 control-group">

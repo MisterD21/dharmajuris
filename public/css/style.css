@@ -9934,7 +9934,7 @@ body {
   background-color: #fff !important;
   max-width: 100%;
   height: auto;
-  padding-right: 40px;
-  padding-left: 30px;
+  padding-right: 60px;
+  /* padding-left: 0px; */
   
 }
