@@ -24,6 +24,7 @@ function App() {
                     <h6 className="text-uppercase">Learn About Us</h6>
                     <h1 className="mb-4">Our Mission</h1>
                     <p>At <b>Yash Jain & Associates</b>, our mission is deeply rooted in our commitment to upholding the principles of justice, fairness, and ethical practice. We recognize the profound impact that legal matters can have on individuals, families, and businesses, and we are dedicated to providing compassionate and effective legal representation to our clients. Our mission is to serve as trusted advisors and advocates, guiding our clients through complex legal challenges with integrity, professionalism, and a relentless pursuit of excellence. We believe in the power of collaboration and teamwork, harnessing the diverse skills and expertise of our team to deliver innovative and tailored solutions that meet the unique needs of each client. Our ultimate goal is to achieve justice and fairness for our clients while upholding the highest standards of ethical conduct and legal professionalism.</p>
+                    <a href="/Contact" className="btn btn-primary mt-2">Learn More</a>
                 </div>
             </div>
         </div>

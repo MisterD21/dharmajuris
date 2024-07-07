@@ -47,7 +47,7 @@ function ClientSlider() {
 
   return (
     <div className="container py-5">
-        <h1>Our Clients</h1>
+        <a href="/OurClients" className="btn mt-2"><h1>Our Clients</h1></a>
         <br/>
       <Slider {...settings}>
         {clientImages.map((image, index) => (

@@ -101,7 +101,7 @@
                   <div className="d-flex flex-column justify-content-start">
                     <Link className="text-white mb-2" to="/Home"><i className="fa fa-angle-right mr-2"></i>Home</Link>
                     <Link className="text-white mb-2" to="/About"><i className="fa fa-angle-right mr-2"></i>About</Link>
-                    <Link className="text-white mb-2" to="/PracticeArea"><i className="fa fa-angle-right mr-2"></i>Practice   Area</Link>
+                    {/* <Link className="text-white mb-2" to="/PracticeArea"><i className="fa fa-angle-right mr-2"></i>Practice   Area</Link> */}
                     <Link className="text-white mb-2" to="/OurPeople"><i className="fa fa-angle-right mr-2"></i>Our People</Link>
                     <Link className="text-white mb-2" to="/ContactUs"><i className="fa fa-angle-right mr-2"></i>Contact</Link>
                   </div>

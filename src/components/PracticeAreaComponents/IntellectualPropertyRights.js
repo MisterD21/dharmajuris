@@ -5,7 +5,7 @@ const IntellectualPropertyRights = () => {
   
     return (
         <>
-            <HeaderComponent title="Intellectual Property Rights" />
+            <HeaderComponent title="Property Rights" />
             <div className="container-fluid py-5">
                 <div className="container py-5">
                     <div className="row">
