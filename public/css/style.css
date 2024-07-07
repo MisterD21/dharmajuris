@@ -9924,3 +9924,17 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
 }
+
+.logo-img {
+  width: 150px;
+  height: auto;
+}
+
+.bg-secondary-logo {
+  background-color: #fff !important;
+  max-width: 100%;
+  height: auto;
+  padding-right: 40px;
+  padding-left: 30px;
+  
+}

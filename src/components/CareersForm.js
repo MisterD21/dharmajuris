@@ -75,7 +75,9 @@ function CareersForm() {
   return (
     <div style={{ padding: '20px', maxWidth: '600px', margin: 'auto' }}>
       <p style={{ fontWeight: '600', color: 'Black', marginBottom: '20px' }}>
-      We are excited to welcome students pursuing a career in law to join our team. At Yash Jain & Associates, we provide significant opportunities for students to develop and refine their legal skills. If you are interested in exploring internship opportunities with us, please send your CV on mail advashj@gmail.com.
+      We are excited to welcome students pursuing a career in law to join our team. At Yash Jain & Associates, we provide significant opportunities for students to develop and refine their legal skills. If you are interested in exploring internship opportunities with us, please send your CV on mail <a href="mailto:contact@yashjainandassociates.com?subject=Apply%20to%20open%20positions">
+            contact@yashjainandassociates.com
+        </a>.
       </p>
       {/* <form onSubmit={handleSubmit}>
         <div style={{ display: 'flex', gap: '10px', marginBottom: '15px' }}>

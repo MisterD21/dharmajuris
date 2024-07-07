@@ -7,7 +7,7 @@ function AboutUs() {
         <div className="container py-5">
             <div className="row">
                 <div className="col-lg-5">
-                    <img className="img-fluid rounded" src="img/about.jpg" alt=""/>
+                    <img className="img-fluid rounded" src="img/ourMission.webp" alt=""/>
                 </div>
                 <div className="col-lg-7 mt-4 mt-lg-0">
                     <h2 className="position-relative text-center bg-white text-primary rounded p-3 mt-4 mb-4 d-none d-lg-block" style={{ width: '812px', marginLeft: '-100px' }}>Decades of Dedication: A Legacy of Legal Excellence</h2>

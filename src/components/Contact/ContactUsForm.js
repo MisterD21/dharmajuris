@@ -73,16 +73,16 @@
                     <div id="success"></div>
                     <h1>Yash Jain & Associates</h1>
                     <h4 className="m-0" onClick={() => window.open('tel:+91-9806204529')}>
-        +91-9806204529
+                    <i class="fas fa-phone"></i> +91-9806204529
     </h4>
     <h4>
         {' '}
         <a href="mailto:contact@yashjainandassociates.com?subject=General%20Enquiry">
-            contact@yashjainandassociates.com
+        <i class="fas fa-envelope"></i> contact@yashjainandassociates.com
         </a>
       </h4>
                     <br/> 
-                    Pragati Nagar, Near St. Thomas
+                    <i class="fas fa-envelope"></i> Pragati Nagar, Near St. Thomas
                     <br/> 
                     School, Shabad Pratap Aashram,
                     <br />Gwalior (M.P)- 474012

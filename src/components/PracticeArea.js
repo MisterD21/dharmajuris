@@ -57,7 +57,7 @@ const PracticeArea = () => {
   return (
     <div className="container py-5">
       <div className="d-flex justify-content-between align-items-center">
-        <h1>Our Practice Areas</h1>
+        <h1>Practice Areas</h1>
         
       </div>
       <br/>
