@@ -7,20 +7,6 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 const PracticeArea = () => {
   const sliderRef = useRef(null); // Reference to the slider component
 
-  // Event handler for previous button
-  const handlePrev = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickPrev(); // Go to the previous slide
-    }
-  };
-
-  // Event handler for next button
-  const handleNext = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickNext(); // Go to the next slide
-    }
-  };
-
   // Define settings for the slider
   const settings = {
     dots: true, // Enable dots navigation
@@ -29,7 +15,7 @@ const PracticeArea = () => {
     slidesToShow: 5, // Number of slides to show at a time
     slidesToScroll: 1,
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Set autoplay speed to 3 seconds
+    autoplaySpeed: 1500, // Set autoplay speed to 3 seconds
     responsive: [
       {
         breakpoint: 1024, // Adjust the number of slides for different screen sizes
@@ -49,7 +35,7 @@ const PracticeArea = () => {
   // Array of practice areas (replace with your actual data)
   const practiceAreas = [
     { icon: 'fa-landmark', title: 'Civil Law', link: '/CivilLitigation' },
-    { icon: 'fa-users', title: 'Family Law', link: '/familylaw' },
+    { icon: 'fa-users', title: 'Family Law', link: '/FamilyLitigation' },
     { icon: 'fa-hand-holding-usd', title: 'Arbitration', link: '/arbitration' },
     { icon: 'fa-gavel', title: 'Commercial Litigation', link: '/CommercialLitigation' },
     { icon: 'fa-gavel', title: 'Corporate Litigation', link: '/CorporateLitigation' },
@@ -60,7 +46,7 @@ const PracticeArea = () => {
     { icon: 'fa-gavel', title: 'Property Litigation', link: '/propertylitigation' },
     { icon: 'fa-gavel', title: 'Public Interest Litigation', link: '/PublicInterestLitigation' },
     { icon: 'fa-gavel', title: 'Pro Bono Litigation', link: '/probonolitigation' },
-    { icon: 'fa-gavel', title: 'Real Estate Disputes', link: '/RealRstateDisputes' },
+    { icon: 'fa-gavel', title: 'Real Estate Disputes', link: '/RealEstateDisputes' },
     { icon: 'fa-gavel', title: 'Regulatory Practice', link: '/RegulatoryPractice' },
     { icon: 'fa-gavel', title: 'SARFAESI Litigation', link: '/SARFAESILitigation' },
     { icon: 'fa-gavel', title: 'Technology Law', link: '/TechnologyLaw' },
@@ -72,10 +58,7 @@ const PracticeArea = () => {
     <div className="container py-5">
       <div className="d-flex justify-content-between align-items-center">
         <h1>Our Practice Areas</h1>
-        <div>
-          <button className="custom-prev-button mx-2" onClick={handlePrev}><FaAngleLeft /></button>
-          <button className="custom-next-button mx-2" onClick={handleNext}><FaAngleRight /></button>
-        </div>
+        
       </div>
       <br/>
       <Slider ref={sliderRef} {...settings}>
